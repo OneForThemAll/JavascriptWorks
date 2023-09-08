@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Memory Game </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="faaav.ico">
+</head>
+
+<body>
+  <center>
+    <h1> 🌷🌿🌹 Cucu's Nature Memory Game 🌹🌿🌷 </h1>
+    <div id="game_container">
+      <img src="BackOfCard.jpg" id="0" class="card" onclick="changeImage('0')">
+      <img src="BackOfCard.jpg" id="1" class="card" onclick="changeImage('1')">
+      <img src="BackOfCard.jpg" id="2" class="card" onclick="changeImage('2')">
+      <img src="BackOfCard.jpg" id="3" class="card" onclick="changeImage('3')"><br>
+      <img src="BackOfCard.jpg" id="4" class="card" onclick="changeImage('4')">
+      <img src="BackOfCard.jpg" id="5" class="card" onclick="changeImage('5')">
+      <img src="BackOfCard.jpg" id="6" class="card" onclick="changeImage('6')">
+      <img src="BackOfCard.jpg" id="7" class="card" onclick="changeImage('7')"><br>
+      <img src="BackOfCard.jpg" id="8" class="card" onclick="changeImage('8')">
+      <img src="BackOfCard.jpg" id="9" class="card" onclick="changeImage('9')">
+      <img src="BackOfCard.jpg" id="10" class="card" onclick="changeImage('10')">
+      <img src="BackOfCard.jpg" id="11" class="card" onclick="changeImage('11')">
+    </div>
+    <br>
+    <div id="stats_container">
+      <b><u> Game Statistics </u></b>
+      <!--- <br><i>Difficulty: </i><span >Easy</span> --->
+      <br><i>Game Mode: </i> <button onclick="changeDifficulty('easy')" id="easyButton" class="buttonClass">Flower (easy)</button> or <button onclick="changeDifficulty('hard')" id="hardButton" class="buttonClass">Leaf (hard)</button>
+      <br><i>Timer: </i><span id="difference"></span> seconds
+      <br><i>Moves: </i><span id="timesClicked">0</span> clicks
+      <br><i>Score: </i><span id="gameScore">0</span> points
+    </div>
+  </center>
+  
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

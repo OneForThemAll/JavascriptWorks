@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#game_container{
+  border: 5px dashed blue;  
+  padding: 15px;
+  width: 50%;
+}
+
+#stats_container{
+  color: whitesmoke;
+  background: black;
+  border: 5px dotted red;
+  width: 90%;
+}
+
+.card {
+  height: 128px;
+  width: 128px;
+
+}
+/* original is 512x512px*/
+
+.swal-modal .swal-text {
+    text-align: center;
+}
+
+.buttonClass {
+  border: none;
+  border-radius: 8px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.leafActiveMode {
+  background-image: linear-gradient(to bottom right, yellowgreen, #00ae0a);
+}
+
+.flowerActiveMode {
+  background-image: linear-gradient(to top left, #001e66, #2e002e);
+  color: whitesmoke;
+}
+
+.welcomeAlert {
+  background-image: linear-gradient(to bottom right, seagreen, lightsteelblue);
+  color: black;
+}
+
+#stats_container {
+  font-size: 1vw;
+  /* and then in smaller screens make it 2vw*/
+}
